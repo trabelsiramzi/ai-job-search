@@ -83,13 +83,13 @@ This repo is a job application workspace. Antigravity acts as a career advisor a
 - `cv/` - LaTeX CV variants (moderncv template, classic style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.agents/skills/` - AI skill definitions and job search CLI tools
-
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
 3. If good fit: create targeted CV (`cv/main_<company>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
 4. **Verify both documents** (see Verification Checklist below)
-5. Prepare interview talking points based on the role requirements and your strengths
+5. **Archive and Git Sync (MANDATORY)**: After compiling, create a folder named `documents/applications/<company_name>/`. Copy the tailored CV and cover letter PDFs to this folder (e.g., `CV_Zeineb_HASSAN_<Company>.pdf` and `LM_Zeineb_HASSAN_<Company>.pdf`). Stage all source (`.tex`) and compiled (`.pdf`) files plus the updated tracker in Git (`git add -f`) and push them to GitHub.
+6. Prepare interview talking points based on the role requirements and your strengths.
 
 **Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Antigravity** by name.
 

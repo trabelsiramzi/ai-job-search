@@ -227,6 +227,21 @@ Do not proceed to Step 6 until both PDFs pass inspection.
 
 After the final clean compile, delete the `.aux`, `.log`, `.out` files (keep the `.tex` and `.pdf`).
 
+### 5e. Archive and Git Sync (MANDATORY)
+
+- Create a folder under `documents/applications/` named after the target company (in lowercase, spaces replaced by underscores, e.g. `documents/applications/univ_lille/`).
+- Copy the compiled CV PDF and Cover Letter PDF to this folder, renaming them clearly (e.g. `CV_Zeineb_HASSAN_<Company>.pdf` and `LM_Zeineb_HASSAN_<Company>.pdf`).
+- Update `job_search_tracker.csv` with the application details.
+- Force-stage the new files, the tracker, and the source `.tex` files in Git:
+  ```bash
+  git add -f cv/main_<company>.tex cover_letters/cover_<company>_<role>.tex documents/applications/<company>/ job_search_tracker.csv
+  ```
+- Commit and push to GitHub:
+  ```bash
+  git commit -m "Add tailored application documents for <Company>"
+  git push origin master
+  ```
+
 ---
 
 ## Step 6: Present Final Output
