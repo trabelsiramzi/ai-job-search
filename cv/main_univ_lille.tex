@@ -8,6 +8,9 @@
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
+% Adjust date column width to avoid overlapping long dates (like MM/YYYY--MM/YYYY)
+\setlength{\hintscolumnwidth}{2.9cm}
+
 % Force section headings to render in moderncv blue (color1)
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
@@ -21,7 +24,7 @@
 \address{Lille, France}{}{}
 \phone[mobile]{0671028610}
 \email{zeinebhassan29@gmail.com}
-\extrainfo{\href{https://www.linkedin.com/in/zeineb-hassan-rh/}{LinkedIn}}
+\extrainfo{Lille et métropole lilloise (max 30km) \quad \href{https://www.linkedin.com/in/zeineb-hassan-rh/}{LinkedIn}}
 
 % Photo d'identité
 \photo[64pt][0.4pt]{photo_zeineb.jpg}
@@ -33,30 +36,29 @@
 % ============================================================
 %     PROFILE STATEMENT
 % ============================================================
-
-\vspace{-10pt}
-\small{Professionnelle administrative rigoureuse, dotée d'une solide expérience en gestion de dossiers, communication institutionnelle et organisation de plannings. En reconversion vers l'assistanat de direction dans le secteur de l'enseignement supérieur, j'allie rigueur documentaire, sens du service et maîtrise des outils bureautiques pour appuyer efficacement une direction dans ses missions quotidiennes.}
-\vspace{5pt}
+\vspace{-20pt}
+\begin{quote}
+\small Professionnelle administrative rigoureuse, dotée d'une solide expérience en gestion de dossiers, communication institutionnelle et organisation de plannings. En reconversion vers l'assistanat de direction dans le secteur de l'enseignement supérieur, j'allie rigueur documentaire, sens du service et maîtrise des outils bureautiques pour appuyer efficacement une direction dans ses missions quotidiennes.
+\end{quote}
+\vspace{10pt}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
-
 \section{Compétences Clés}
-\cvitem{Gestion administrative}{Suivi et archivage de dossiers complexes, classement documentaire, rédaction de comptes rendus et notes internes, planification et coordination de réunions.}
-\cvitem{Communication}{Interface active entre la direction, les équipes internes et les publics externes (parents, clients, partenaires). Transmission claire de consignes, adaptation à des interlocuteurs variés.}
-\cvitem{Suivi de dossiers}{Saisie et mise à jour de données, contrôle de la cohérence des informations, suivi de tableaux de bord et d'indicateurs d'activité (logiciel SDP, Pack Office).}
-\cvitem{Confidentialité}{Gestion d'informations sensibles (dossiers élèves, dossiers clients, opérations de caisse) dans le strict respect des procédures et de la confidentialité.}
-\cvitem{Numérique}{Niveau certifié DigComp 6 — maîtrise du Pack Office (Word, Excel, PowerPoint), outils collaboratifs, gestion de bases de données.}
+\cvlistitem{\textbf{Gestion administrative} : Suivi et archivage de dossiers complexes, classement documentaire, rédaction de comptes rendus et notes internes, planification et coordination de réunions.}
+\cvlistitem{\textbf{Communication} : Interface active entre la direction, les équipes internes et les publics externes (parents, clients, partenaires). Transmission claire de consignes, adaptation à des interlocuteurs variés.}
+\cvlistitem{\textbf{Suivi de dossiers} : Saisie et mise à jour de données, contrôle de la cohérence des informations, suivi de tableaux de bord et d'indicateurs d'activité (logiciel SDP, Pack Office).}
+\cvlistitem{\textbf{Confidentialité} : Gestion d'informations sensibles (dossiers élèves, dossiers clients, opérations de caisse) dans le strict respect des procédures et de la confidentialité.}
+\cvlistitem{\textbf{Numérique} : Niveau certifié DigComp 6 — maîtrise du Pack Office (Word, Excel, PowerPoint), outils collaboratifs, gestion de bases de données.}
 
 % ============================================================
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
-
 \section{Expérience Professionnelle}
 
 % --- Bureau Vallée ---
-\cventry{01/2025--06/2025}{Assistante administrative}{Bureau Vallée}{Tunis}{Tunisie}{
+\cventry{01/2025--06/2025}{Assistante administrative}{Bureau Vallée}{Tunis, Tunisie}{}{%
 \begin{itemize}
     \item Gestion et organisation de l'ensemble des documents administratifs et comptables du point de vente.
     \item Suivi quotidien de la caisse, contrôle des encaissements et mise à jour des données sur logiciel SDP.
@@ -68,7 +70,7 @@
 
 % --- École primaire l'Espoir ---
 \needspace{5\baselineskip}
-\cventry{09/2020--12/2024}{Professeure des écoles primaires}{École primaire l'Espoir}{Tunisie}{}{
+\cventry{09/2020--12/2024}{Professeure des écoles primaires}{École primaire l'Espoir}{Tunisie}{}{%
 \begin{itemize}
     \item Gestion et suivi administratif des dossiers des élèves, des évaluations et des documents institutionnels.
     \item Organisation et planification d'activités adaptées, coordination avec l'administration et les familles.
@@ -79,7 +81,7 @@
 \vspace{3pt}
 
 % --- JWS Groupe ---
-\cventry{04/2019--10/2019}{Téléopératrice}{JWS Groupe}{Tunis}{Tunisie}{
+\cventry{04/2019--10/2019}{Téléopératrice}{JWS Groupe}{Tunis, Tunisie}{}{%
 \begin{itemize}
     \item Gestion de la relation clientèle à distance, suivi de dossiers et reporting régulier.
     \item Atteinte des objectifs qualitatifs et quantitatifs dans un environnement structuré et exigeant.
@@ -88,33 +90,28 @@
 % ============================================================
 %     EDUCATION
 % ============================================================
-
 \section{Formation}
-\cventry{2018--2021}{Licence appliquée en Sciences de l'Éducation}{ISEAH de Zaghouan}{Tunisie}{}{
-Mémoire : ``Les enfants à haut potentiel en Tunisie : réalités et perspectives.'' Étude des méthodes pédagogiques inclusives, psychologie de l'enfant et gestion de la diversité en milieu scolaire.
-}
-\vspace{3pt}
-\cventry{2018}{Baccalauréat en Sciences Expérimentales}{Lycée Assad Ibn Elfourat}{Tunisie}{}{}
+\cventry{2018--2021}{Licence appliquée en Sciences de l'Éducation}{ISEAH de Zaghouan}{Zaghouan, Tunisie}{}{%
+Mémoire : \textit{« Les enfants à haut potentiel en Tunisie : réalités et perspectives. »} Étude des méthodes pédagogiques inclusives, psychologie de l'enfant et gestion de la diversité en milieu scolaire.}
+\cventry{2018}{Baccalauréat en Sciences Expérimentales}{Lycée Assad Ibn Elfourat}{Tunisie}{}{Spécialisation scientifique (Sciences physiques, chimie, biologie).}
 
 % ============================================================
 %     LANGUES
 % ============================================================
-
 \section{Langues}
-\cvitem{Langues}{\textbf{Arabe} (langue maternelle), \textbf{Français} (courant / bilingue), \textbf{Anglais} (courant), \textbf{Allemand} (notions).}
+\cvitem{}{\textbf{Arabe} (langue maternelle) \quad \textbf{Français} (courant / bilingue) \quad \textbf{Anglais} (courant) \quad \textbf{Allemand} (notions)}
 
 % ============================================================
-%     ENGAGEMENT & CERTIFICATIONS
+%     PROJETS & ENGAGEMENT
 % ============================================================
-
-\section{Engagement \& Certifications}
-\cvitem{Bénévolat}{Membre actif au sein de Le Petit Secouriste, Croissant Rouge Tunisien, SCIENTIST KIDS WORLD — animation de groupes, coordination logistique, travail avec publics jeunes.}
-\cvitem{Certifications}{Certificat de secourisme PSC1 (Ministère de la Santé, 2021), Microsoft Tools for Startups (ISAMM, 2021).}
+\section{Projets \& Engagement}
+\cvlistitem{\textbf{Clubs (Théâtre \& Lecture)} : Création et animation d'ateliers culturels, planification d'événements, gestion logistique et coordination.}
+\cvlistitem{\textbf{Bénévolat} : Membre actif au sein d'organisations d'entraide (Le Petit Secouriste, Croissant Rouge Tunisien, SCIENTIST KIDS WORLD).}
+\cvlistitem{\textbf{Certifications} : Certificat de secourisme PSC1 (Ministère de la Santé), Microsoft Tools for Startups (ISAMM).}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
-
 \section{Références}
 \cvitem{}{Disponibles sur demande.}
 
