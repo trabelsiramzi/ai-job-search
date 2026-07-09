@@ -85,6 +85,10 @@ Tunis, Tunisie
 - Pack Office (Word, Excel, PowerPoint)
 - Logiciel SDP
 
+## Certifications
+- **Microsoft Tools for Startups** — ISAMM (2021)
+- **Certificat de secourisme PSC1** — Ministère de la Santé (2021)
+
 ## Publications
 None.
 
