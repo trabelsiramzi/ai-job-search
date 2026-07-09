@@ -69,22 +69,22 @@ Also read the most recent existing CV and cover letter files for concrete struct
 - Read any existing `cover_letters/cover_*.tex` or `cover_letters/Cover_*.tex` file as a template reference
 
 ### CV (`cv/main_<company>.tex`)
-- Always in **English**
-- Follow the moderncv/banking format from `05-cv-templates.md`
+- Always in **French** (unless the user explicitly requests otherwise)
+- Follow the moderncv/classic format from `05-cv-templates.md`
 - Tailor the profile statement and experience bullets to the specific role
 - Reframe skills and achievements to match job requirements
 - Keep to 2 pages
 
 ### Cover Letter (`cover_letters/cover_<company>_<role>.tex`)
-- **Match the language of the job posting** (Danish posting -> Danish cover letter, English posting -> English cover letter)
+- Always in **French** (unless the user explicitly requests otherwise)
 - Follow the structure from `06-cover-letter-templates.md`
 - Use the `cover.cls` template
 - Tailor the opening paragraph to the specific role and company
-- Address to a named person if available in the posting, otherwise "Dear Hiring Manager" (or equivalent in posting language)
+- Address to a named person if available in the posting, otherwise "Madame, Monsieur,"
 - Keep to approximately one page
 - Any mention of agentic coding or AI tooling must reference **Antigravity** by name
 
-Write both files to disk. Keep the exact text of both drafts in working memory — you will pass them inline to the reviewer in Step 3 and revise them in Step 4 without re-reading.
+Write both files to disk, and **immediately run the compilation commands** (from Step 5) to generate the corresponding PDF files. Keep the exact text of both drafts in working memory — you will pass them inline to the reviewer in Step 3 and revise them in Step 4 without re-reading.
 
 ---
 

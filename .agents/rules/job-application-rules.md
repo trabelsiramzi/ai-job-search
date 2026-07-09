@@ -1,7 +1,7 @@
 # Job Application Assistant for Zeineb HASSAN
 
 <!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+<!-- Setup completed successfully on 2026-07-09 -->
 
 ## Role
 This repo is a job application workspace. Antigravity acts as a career advisor and application assistant for Zeineb HASSAN, helping with:
@@ -118,8 +118,9 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] No LaTeX syntax errors (balanced braces, correct commands)
 - [ ] No spelling or grammar errors
 - [ ] Agentic coding / AI tooling references mention **Antigravity** by name
-- [ ] Cover letter is addressed to the correct person (or "Dear Hiring Manager" if unknown)
+- [ ] Cover letter is addressed to the correct person (or "Madame, Monsieur," if unknown)
 - [ ] Cover letter fits approximately one page
+- [ ] Language is French (unless explicitly requested otherwise by the user)
 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
