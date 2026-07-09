@@ -4,15 +4,16 @@ Step-by-step instructions for getting the AI Job Search framework running.
 
 ## 1. Prerequisites
 
-### Claude Code
+### Google Antigravity or Claude Code
 
-Install Claude Code (Anthropic's CLI for Claude):
+You can run this project using **Google Antigravity (`agy`)** or **Claude Code**.
 
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-You'll need an Anthropic API key or a Claude Pro/Team subscription. See the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for details.
+- For **Google Antigravity**: Make sure you have the `agy` CLI installed. See the [Antigravity Docs](https://antigravity.google/docs) for installation and authentication.
+- For **Claude Code**: Install the CLI using:
+  ```bash
+  npm install -g @anthropic-ai/claude-code
+  ```
+  See the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for details.
 
 ### Python
 
@@ -59,21 +60,25 @@ done
 
 ## 4. Run the setup interview
 
-Start Claude Code in the repository:
+Start the AI tool in the repository:
 
 ```bash
+# If using Google Antigravity:
+agy
+
+# If using Claude Code:
 claude
 ```
 
-Then run the onboarding:
+Then run the onboarding command:
 
 ```
 /setup
 ```
 
-Claude will offer two paths:
+The AI will offer two paths:
 
-- **Path A (recommended):** Share your existing CV (mention the file with `@` or paste the text). Claude extracts your information and asks follow-up questions for anything missing.
+- **Path A (recommended):** Share your existing CV (mention the file or paste the text). The AI extracts your information and asks follow-up questions for anything missing.
 - **Path B:** Answer structured interview questions section by section.
 
 Both paths produce the same result: fully populated profile files.
@@ -82,7 +87,7 @@ Both paths produce the same result: fully populated profile files.
 
 | File | Content |
 |------|---------|
-| `CLAUDE.md` | Your full candidate profile |
+| `CLAUDE.md` / `.agents/rules/job-application-rules.md` | Your full candidate profile |
 | `01-candidate-profile.md` | Structured education, experience, skills |
 | `02-behavioral-profile.md` | Behavioral assessment |
 | `04-job-evaluation.md` | Personalized skill match areas and career goals |
@@ -130,7 +135,7 @@ Or paste the job description directly:
 /apply [paste job posting text here]
 ```
 
-Claude will:
+The AI will:
 1. Evaluate the fit against your profile
 2. Ask if you want to proceed
 3. Draft a tailored CV and cover letter
