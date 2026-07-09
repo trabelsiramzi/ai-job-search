@@ -50,7 +50,7 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
 \address{[YOUR_ADDRESS]}{}{}
 \phone[mobile]{[YOUR_PHONE]}
 \email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\extrainfo{\href{https://www.linkedin.com/in/zeineb-hassan-rh/}{LinkedIn}}
 
 \begin{document}
 \makecvtitle

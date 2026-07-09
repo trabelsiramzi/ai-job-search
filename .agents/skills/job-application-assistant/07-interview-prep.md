@@ -12,42 +12,40 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Gestion de caisse et de stocks (Bureau Vallée Tunis)
+**S:** Le magasin Bureau Vallée Tunis gérait quotidiennement d'importants flux de clients et d'encaissements, nécessitant une mise à jour précise du logiciel SDP et du stock.
+**T:** Je devais assurer l'accueil, effectuer les encaissements sans erreur de caisse et mettre à jour régulièrement l'état des stocks.
+**A:** J'ai appliqué rigoureusement les procédures de contrôle, géré les flux de clients physiques tout en enregistrant les transactions dans le logiciel SDP, et effectué des inventaires réguliers.
+**R:** Aucun écart de caisse significatif signalé pendant ma mission, et les stocks étaient constamment à jour pour faciliter le réapprovisionnement.
+**Use for:** "Rigueur", "Organisation", "Fiabilité numérique", "Respect des procédures"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Organisation d'activités & Gestion administrative (École primaire l'Espoir)
+**S:** En tant que professeure des écoles, je devais gérer une classe d'enfants aux besoins divers tout en assurant un suivi administratif lourd (dossiers élèves, évaluations).
+**T:** Je devais concevoir des activités adaptées aux élèves ayant des troubles d'apprentissage et coordonner la communication avec les parents et la direction.
+**A:** J'ai planifié et individualisé les programmes, mené des entretiens de médiation réguliers avec les familles pour aligner nos objectifs, et maintenu à jour tous les dossiers administratifs scolaires.
+**R:** Climat scolaire apaisé, amélioration du suivi des élèves en difficulté et des relations de confiance accrues entre l'école et les parents.
+**Use for:** "Gestion de conflits / Médiation", "Communication interpersonnelle", "Planification & organisation", "Confidentialité"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 3. Gestion logistique et coordination (Fondation de Clubs)
+**S:** Je souhaitais proposer des activités culturelles enrichissantes pour les jeunes de ma communauté.
+**T:** Créer et animer un club de lecture et un club de théâtre de façon autonome.
+**A:** J'ai conçu le projet, planifié les événements, coordonné la communication pour attirer des membres et géré toute la logistique opérationnelle des ateliers et représentations.
+**R:** Réalisation réussie de plusieurs ateliers et représentations théâtrales pour enfants, démontrant mon leadership et ma capacité à coordonner un projet de A à Z.
+**Use for:** "Sens de l'initiative", "Gestion de projet", "Autonomie", "Organisation d'événements"
 
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+> J'ai terminé mon contrat d'assistante administrative chez Bureau Vallée à Tunis, et je me suis installée en France (à Lille). Je saisis cette opportunité pour poursuivre ma reconversion professionnelle dans les domaines administratif et RH au sein d'une structure locale stable.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Je n'ai pas encore pratiqué cet outil spécifique, mais ma solide capacité d'apprentissage (démontrée par l'utilisation rapide du logiciel SDP et la maîtrise du référentiel DigComp 6) me permettra d'être rapidement opérationnelle. De plus, mon expérience d'enseignement prouve que je sais structurer et assimiler rapidement de nouveaux processus.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Je me vois pleinement intégrée en tant qu'élément clé de votre équipe administrative ou RH, ayant développé une expertise approfondie de vos processus internes et participant activement à la coordination de nos activités courantes.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> Mon goût pour le travail bien fait peut me rendre parfois trop perfectionniste, ce qui m'amène à revérifier mes dossiers plusieurs fois. J'ai appris à canaliser cela en structurant mes priorités et en respectant des plages horaires définies pour chaque tâche administrative.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
@@ -61,21 +59,15 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ### About the Team
 - "How big is the team, and how do you divide work?"
-- "What does the development/project lifecycle look like, from idea to production?"
-- "How do you onboard new team members?"
+- "What does the onboarding process for new team members look like?"
 
 ### About Tech & Growth
-- "What's your current tech stack for [relevant area]?"
-- "Is there room to grow into more architectural or strategic decisions?"
-- "How does the team stay current with new tools and methods?"
+- "What tools or software do you use au quotidien ?"
+- "Quelles sont les opportunités de formation interne ?"
 
 ### About Culture (use these to prevent disappointment)
 - "How would you describe the team culture?"
-- "What does professional development look like here?"
-- "Is there flexibility for remote/hybrid work?"
-- "What's the balance between development/new projects and maintenance work?"
-- "How would you describe the leadership style in this team?"
-- "What do people who thrive here have in common?"
+- "What's the balance between routine administrative tasks and new projects?"
 
 ## Phone/Video Interview Tips
 - Have STAR examples written out (use this file)

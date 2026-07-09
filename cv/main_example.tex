@@ -1,20 +1,15 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Zeineb HASSAN
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
 \documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}
+\moderncvstyle{classic}
 \moderncvcolor{blue}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
-\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+% Force section headings to render in moderncv blue (color1)
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
@@ -24,18 +19,21 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Zeineb HASSAN - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Zeineb}{HASSAN}
+\address{Lille, France}{}{}
+\phone[mobile]{0671028610}
+\email{zeinebhassan29@gmail.com}
+\extrainfo{Lille et métropole lilloise (max 30km)}
+
+% Photo d'identité (Déposez votre photo "photo_zeineb.jpg" dans le dossier cv/)
+\photo[64pt][0.4pt]{photo_zeineb.jpg}
 
 \begin{document}
 
@@ -45,26 +43,25 @@
 %     PROFILE STATEMENT
 % ============================================================
 
-\vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\vspace{-10pt}
+\small{Professionnelle polyvalente en reconversion vers les ressources humaines, la gestion administrative et la comptabilité. Organisée, rigoureuse et dotée d’un bon relationnel, je souhaite intégrer une structure où je pourrai valoriser mes compétences en suivi administratif, gestion de dossiers et communication.}
+\vspace{5pt}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
 
-\section{Core Competencies}
+\section{Compétences Clés}
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Gestion administrative \& RH}: Saisie et organisation de documents administratifs, suivi et archivage de dossiers, gestion de la confidentialité, rédaction professionnelle, planification de plannings.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Comptabilité de caisse \& Gestion des stocks}: Gestion des encaissements, suivi et contrôle des flux de caisse, suivi des niveaux de stocks et mise à jour de bases de données, logiciel SDP.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Relation client \& Communication}: Accueil physique et téléphonique, orientation des publics (gestion de flux), prospection téléphonique et gestion de la relation client à distance, médiation et gestion de conflits.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Compétences numériques}: Niveau avancé certifié DigComp 6, maîtrise du Pack Office (Word, Excel, PowerPoint) et des outils bureautiques.
 
 \end{itemize}
 
@@ -72,36 +69,38 @@
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
 
-\section{Professional Experience}
+\section{Expérience Professionnelle}
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Bureau Vallée ---
+\item{\cventry{01/2025--06/2025}{Assistante administrative}{Bureau Vallée}{Tunis, Tunisie}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Gestion rigoureuse des encaissements et suivi quotidien de la caisse.
+    \item Saisie et organisation de documents administratifs et comptables.
+    \item Suivi des stocks et mise à jour régulière des données sur le logiciel SDP.
+    \item Classement, archivage de documents et accueil physique et orientation des clients.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- École primaire l'Espoir ---
+\item{\cventry{09/2020--12/2024}{Professeure des écoles primaires}{École primaire l'Espoir}{Tunisie}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Gestion et suivi administratif des dossiers des élèves et des évaluations.
+    \item Planification et organisation d'activités adaptées aux enfants à besoins spécifiques (troubles de l'apprentissage).
+    \item Communication et gestion de la relation interne avec l'administration et externe avec les parents d'élèves.
+    \item Médiation et résolution de conflits au sein de la classe et de l'établissement.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- JWS Groupe ---
+\item{\cventry{04/2019--10/2019}{Téléopératrice}{JWS Groupe}{Tunis, Tunisie}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Gestion de la relation clientèle à distance et suivi régulier des dossiers clients.
+    \item Prospection commerciale par téléphone et reporting hebdomadaire des activités.
+    \item Atteinte constante des objectifs qualitatifs et quantitatifs fixés par la direction.
 \end{itemize}}}
 
 \end{itemize}
@@ -110,18 +109,18 @@
 %     EDUCATION
 % ============================================================
 
-\section{Education}
+\section{Formation}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2018--2021}{Licence appliquée en Sciences de l'Éducation}{ISEAH de Zaghouan}{Zaghouan, Tunisie}{}{\vspace{1pt}
+Mémoire : ``Les enfants à haut potentiel en Tunisie : réalités et perspectives.'' Étude des méthodes pédagogiques inclusives et de la psychologie de l'enfant.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2018}{Baccalauréat en Sciences Expérimentales}{Lycée Assad Ibn Elfourat}{Tunisie}{}{\vspace{1pt}
+Spécialisation scientifique (Sciences physiques, chimie, biologie).
 }}
 
 \end{itemize}
@@ -130,40 +129,32 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 %     LANGUAGES
 % ============================================================
 
-\section{Languages}
+\section{Langues}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item \textbf{Arabe} (langue maternelle), \textbf{Français} (courant / bilingue), \textbf{Anglais} (courant), \textbf{Allemand} (notions).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     PROJETS & ENGAGEMENT
 % ============================================================
 
-\section{Publications}
+\section{Projets \& Engagement}
 \vspace{1pt}
 \begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item \textbf{Fondation de Clubs (Théâtre \& Lecture)}: Création et animation d'ateliers culturels pour enfants et adolescents, planification d'événements, gestion logistique et coordination.
+\item \textbf{Bénévolat}: Membre actif au sein d'organisations d'entraide (Le Petit Secouriste, Croissant Rouge Tunisien, SCIENTIST KIDS WORLD).
+\item \textbf{Certifications}: Certificat de secourisme (Ministère de la Santé), Microsoft Tools for Startups (ISAMM).
 \end{itemize}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
 
-\section{References}
+\section{Références}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item{Disponible sur demande.}
 \end{itemize}
 
 \end{document}

@@ -2,9 +2,9 @@
 
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
-## Template: LaTeX moderncv (Banking Style)
+## Template: LaTeX moderncv (Classic Style)
 
-All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
+All CVs use the moderncv LaTeX package with the "classic" style and "blue" color scheme.
 
 **Output file:** `cv/main_<company>.tex`
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
@@ -22,15 +22,12 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
 
 ```latex
 \documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}
+\moderncvstyle{classic}
 \moderncvcolor{blue}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
-\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+% Force section headings to render in moderncv blue (color1)
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
 
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
@@ -50,7 +47,7 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
 \address{[YOUR_ADDRESS]}{}{}
 \phone[mobile]{[YOUR_PHONE]}
 \email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\extrainfo{\href{https://www.linkedin.com/in/zeineb-hassan-rh/}{LinkedIn}}
 
 \begin{document}
 \makecvtitle
@@ -105,12 +102,11 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Assistante Administrative / Secrétariat roles:**
+> Professionnelle polyvalente et rigoureuse, forte d'une solide expérience dans la gestion de dossiers, la communication et l'organisation. En reconversion professionnelle, je souhaite mettre ma réactivité, mon sens du service et ma maîtrise des outils bureautiques (Pack Office, logiciel SDP) au profit d'un poste d'assistante de gestion administrative.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Assistante RH / Administration du personnel roles:**
+> Forte d'une expérience d'enseignement et de gestion administrative de dossiers, je me réoriente vers le domaine des Ressources Humaines. Mon sens aigu de la confidentialité, mes compétences en communication et ma capacité à coordonner des projets et gérer des relations de travail sont des atouts majeurs pour accompagner vos collaborateurs.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

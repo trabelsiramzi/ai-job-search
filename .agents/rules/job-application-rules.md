@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Zeineb HASSAN
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Antigravity acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Antigravity acts as a career advisor and application assistant for Zeineb HASSAN, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,71 +13,74 @@ This repo is a job application workspace. Antigravity acts as a career advisor a
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
+- **Name:** Zeineb HASSAN
 - **Location:** Lille, France (Max 30km de distance / métropole lilloise)
-- **Languages:** Français, [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Languages:** Français (courant), Arabe (maternelle), Anglais (courant), Allemand (notions)
+- **Status:** En reconversion professionnelle
+- **LinkedIn headline:** "En reconversion vers les Ressources Humaines, la Gestion Administrative et la Comptabilité"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Licence appliquée in Sciences de l'Éducation** (2018-2021) - ISEAH de Zaghouan (Zaghouan, Tunisie)
+  - Thesis: "Les enfants à haut potentiel en Tunisie : réalités et perspectives"
+  - Topics: Sciences de l'éducation, pédagogie, psychologie de l'enfant
+- **Baccalauréat in Sciences Expérimentales** (2018) - Lycée Assad Ibn Elfourat (Tunisie)
+  - Topics: Sciences physiques, chimie, biologie, mathématiques
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Assistante administrative** (01/2025 - 06/2025) - **Bureau Vallée** (Tunis, Tunisie)
+  - Gestion des encaissements et suivi quotidien de la caisse
+  - Saisie, classement et archivage de documents administratifs et comptables
+  - Suivi des stocks et mise à jour régulière des données sur le logiciel SDP
+  - Accueil physique et orientation des clients (gestion de flux)
+- **Professeure des écoles primaires** (09/2020 - 12/2024) - **École primaire l'Espoir** (Tunisie)
+  - Gestion et suivi administratif des dossiers des élèves et des évaluations
+  - Planification et organisation d'activités adaptées aux enfants à besoins spécifiques
+  - Communication et gestion de la relation interne (administration) et externe (parents d'élèves)
+  - Médiation et résolution de conflits au sein de la classe et de l'établissement
+- **Téléopératrice** (04/2019 - 10/2019) - **JWS Groupe** (Tunis, Tunisie)
+  - Gestion de la relation clientèle à distance et suivi des dossiers clients
+  - Prospection commerciale par téléphone et reporting d'activité
+  - Atteinte d'objectifs quantitatifs et qualitatifs
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Gestion administrative, Saisie de données, Accueil & relation client, Pack Office (Word, Excel, PowerPoint)
+- **Secondary:** Ressources humaines, Comptabilité de caisse, Gestion des stocks, Logiciel SDP
+- **Domain:** Administration de bureau, Enseignement & Pédagogie, Relation client (téléphonie/physique)
+- **Software:** Microsoft Office Suite, Logiciel SDP, Outils numériques avancés (DigComp 6)
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Microsoft Tools for Startups** - ISAMM - completed 2021
+- **Certificat de secourisme** - Ministère de la santé - completed 2021
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Aucune
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Aucune
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Rigoureuse et autonome** - Grand respect des processus et de l'exactitude des saisies administratives
+- **Excellente communicante** - Capacité à s'adapter à des interlocuteurs variés (parents, clients, direction)
+- **Strengths:** Rigueur, organisation, écoute active, médiation de conflits
+- **Growth areas:** Perfectionnisme (vérification multiple des dossiers administrés)
+- **Thrives in:** Environnements structurés, collaboratifs et valorisant l'accueil ou le service
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- L'organisation de projets culturels ou logistiques
+- L'accompagnement individuel et la résolution de problèmes complexes (administratifs ou relationnels)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Gestion administrative et Assistanat** : Cabinets médicaux, PME, administrations publiques, établissements scolaires
+- **Ressources Humaines** : Agences de recrutement, services RH de PME/ETI
+- **Assistanat Comptable** : Commerces de détail, PME régionales
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Postes situés à plus de 30 km de Lille
+- Environnements de travail toxiques, désorganisés ou manquant de respect de la confidentialité
 
 ## Repo Structure
-- `cv/` - LaTeX CV variants (moderncv template, banking style)
+- `cv/` - LaTeX CV variants (moderncv template, classic style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.agents/skills/` - AI skill definitions and job search CLI tools
 
@@ -106,7 +109,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Nice-to-have requirements are highlighted where there is a match
 
 ### Consistency
-- [ ] CV follows the standard 2-page moderncv/banking format
+- [ ] CV follows the standard 2-page moderncv/classic format
 - [ ] Cover letter uses cover.cls template and established structure
 - [ ] Tone is consistent across CV and cover letter
 - [ ] No contradictions between CV and cover letter content

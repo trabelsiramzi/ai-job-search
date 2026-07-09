@@ -8,8 +8,8 @@
 - **Location:** [YOUR_ADDRESS]
 - **Phone:** [YOUR_PHONE]
 - **Email:** [YOUR_EMAIL]
-- **LinkedIn:** [YOUR_LINKEDIN_URL]
-- **GitHub:** [YOUR_GITHUB_URL]
+- **LinkedIn:** https://www.linkedin.com/in/zeineb-hassan-rh/
+- **GitHub:** N/A
 - **Languages:** [YOUR_LANGUAGES with proficiency levels]
 - **Status:** [YOUR_EMPLOYMENT_STATUS]
 - **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
