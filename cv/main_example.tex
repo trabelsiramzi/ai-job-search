@@ -1,10 +1,4 @@
 %% Master CV - Zeineb HASSAN
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
-%%
-%% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
-
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{blue}
@@ -13,6 +7,7 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+% Recommandé pour la typographie française : \usepackage[french]{babel}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -22,8 +17,7 @@
     pdftitle={Zeineb HASSAN - CV},
     pdfpagemode=FullScreen,
 }
-\usepackage[scale=0.80]{geometry}
-\usepackage{import}
+\usepackage[scale=0.80]{geometry} % Ajustez à 0.85 si ça dépasse sur deux pages
 
 % personal data
 \name{Zeineb}{HASSAN}
@@ -32,7 +26,7 @@
 \email{zeinebhassan29@gmail.com}
 \extrainfo{Lille et métropole lilloise (max 30km)}
 
-% Photo d'identité (Déposez votre photo "photo_zeineb.jpg" dans le dossier cv/)
+% Photo d'identité
 \photo[64pt][0.4pt]{photo_zeineb.jpg}
 
 \begin{document}
@@ -42,119 +36,77 @@
 % ============================================================
 %     PROFILE STATEMENT
 % ============================================================
-
-\vspace{-10pt}
-\small{Professionnelle polyvalente en reconversion vers les ressources humaines, la gestion administrative et la comptabilité. Organisée, rigoureuse et dotée d’un bon relationnel, je souhaite intégrer une structure où je pourrai valoriser mes compétences en suivi administratif, gestion de dossiers et communication.}
-\vspace{5pt}
+\vspace{-20pt}
+\begin{quote}
+\small Professionnelle polyvalente en reconversion vers les ressources humaines, la gestion administrative et la comptabilité. Organisée, rigoureuse et dotée d’un bon relationnel, je souhaite intégrer une structure où je pourrai valoriser mes compétences en suivi administratif, gestion de dossiers et communication.
+\end{quote}
+\vspace{10pt}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
-
 \section{Compétences Clés}
-\vspace{1pt}
-\begin{itemize}
-
-\item \textbf{Gestion administrative \& RH}: Saisie et organisation de documents administratifs, suivi et archivage de dossiers, gestion de la confidentialité, rédaction professionnelle, planification de plannings.
-
-\item \textbf{Comptabilité de caisse \& Gestion des stocks}: Gestion des encaissements, suivi et contrôle des flux de caisse, suivi des niveaux de stocks et mise à jour de bases de données, logiciel SDP.
-
-\item \textbf{Relation client \& Communication}: Accueil physique et téléphonique, orientation des publics (gestion de flux), prospection téléphonique et gestion de la relation client à distance, médiation et gestion de conflits.
-
-\item \textbf{Compétences numériques}: Niveau avancé certifié DigComp 6, maîtrise du Pack Office (Word, Excel, PowerPoint) et des outils bureautiques.
-
-\end{itemize}
+\cvlistitem{\textbf{Gestion administrative \& RH} : Saisie et organisation de documents administratifs, suivi et archivage de dossiers, gestion de la confidentialité, rédaction, planification.}
+\cvlistitem{\textbf{Comptabilité \& Stocks} : Gestion des encaissements, suivi des flux de caisse, suivi des niveaux de stocks et mise à jour de bases de données (logiciel SDP).}
+\cvlistitem{\textbf{Relation client \& Communication} : Accueil physique et téléphonique, gestion de flux, prospection et relation client à distance, médiation et gestion de conflits.}
+\cvlistitem{\textbf{Outils Numériques} : Niveau certifié DigComp 6, maîtrise du Pack Office (Word, Excel, PowerPoint) et des outils bureautiques.}
 
 % ============================================================
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
-
 \section{Expérience Professionnelle}
-\vspace{3pt}
-\begin{itemize}
 
-% --- Bureau Vallée ---
-\item{\cventry{01/2025--06/2025}{Assistante administrative}{Bureau Vallée}{Tunis, Tunisie}{}{\vspace{1pt}
+\cventry{01/2025--06/2025}{Assistante administrative}{Bureau Vallée}{Tunis, Tunisie}{}{%
 \begin{itemize}
     \item Gestion rigoureuse des encaissements et suivi quotidien de la caisse.
     \item Saisie et organisation de documents administratifs et comptables.
     \item Suivi des stocks et mise à jour régulière des données sur le logiciel SDP.
-    \item Classement, archivage de documents et accueil physique et orientation des clients.
-\end{itemize}}}
+    \item Classement, archivage de documents et accueil physique des clients.
+\end{itemize}}
 
-\vspace{3pt}
-
-% --- École primaire l'Espoir ---
-\item{\cventry{09/2020--12/2024}{Professeure des écoles primaires}{École primaire l'Espoir}{Tunisie}{}{\vspace{1pt}
+\cventry{09/2020--12/2024}{Professeure des écoles primaires}{École primaire l'Espoir}{Tunisie}{}{%
 \begin{itemize}
     \item Gestion et suivi administratif des dossiers des élèves et des évaluations.
-    \item Planification et organisation d'activités adaptées aux enfants à besoins spécifiques (troubles de l'apprentissage).
-    \item Communication et gestion de la relation interne avec l'administration et externe avec les parents d'élèves.
+    \item Planification et organisation d'activités adaptées aux enfants à besoins spécifiques.
+    \item Communication avec l'administration et gestion de la relation avec les parents d'élèves.
     \item Médiation et résolution de conflits au sein de la classe et de l'établissement.
-\end{itemize}}}
+\end{itemize}}
 
-\vspace{3pt}
-
-% --- JWS Groupe ---
-\item{\cventry{04/2019--10/2019}{Téléopératrice}{JWS Groupe}{Tunis, Tunisie}{}{\vspace{1pt}
+\cventry{04/2019--10/2019}{Téléopératrice}{JWS Groupe}{Tunis, Tunisie}{}{%
 \begin{itemize}
     \item Gestion de la relation clientèle à distance et suivi régulier des dossiers clients.
     \item Prospection commerciale par téléphone et reporting hebdomadaire des activités.
     \item Atteinte constante des objectifs qualitatifs et quantitatifs fixés par la direction.
-\end{itemize}}}
-
-\end{itemize}
+\end{itemize}}
 
 % ============================================================
 %     EDUCATION
 % ============================================================
-
 \section{Formation}
-\vspace{1pt}
-\begin{itemize}
 
-\item{\cventry{2018--2021}{Licence appliquée en Sciences de l'Éducation}{ISEAH de Zaghouan}{Zaghouan, Tunisie}{}{\vspace{1pt}
-Mémoire : ``Les enfants à haut potentiel en Tunisie : réalités et perspectives.'' Étude des méthodes pédagogiques inclusives et de la psychologie de l'enfant.
-}}
+\cventry{2018--2021}{Licence appliquée en Sciences de l'Éducation}{ISEAH de Zaghouan}{Zaghouan, Tunisie}{}{%
+Mémoire : \textit{« Les enfants à haut potentiel en Tunisie : réalités et perspectives. »} Étude des méthodes pédagogiques inclusives et de la psychologie de l'enfant.}
 
-\vspace{3pt}
-
-\item{\cventry{2018}{Baccalauréat en Sciences Expérimentales}{Lycée Assad Ibn Elfourat}{Tunisie}{}{\vspace{1pt}
-Spécialisation scientifique (Sciences physiques, chimie, biologie).
-}}
-
-\end{itemize}
+\cventry{2018}{Baccalauréat en Sciences Expérimentales}{Lycée Assad Ibn Elfourat}{Tunisie}{}{Spécialisation scientifique (Sciences physiques, chimie, biologie).}
 
 % ============================================================
 %     LANGUAGES
 % ============================================================
-
 \section{Langues}
-\vspace{1pt}
-\begin{itemize}
-\item \textbf{Arabe} (langue maternelle), \textbf{Français} (courant / bilingue), \textbf{Anglais} (courant), \textbf{Allemand} (notions).
-\end{itemize}
+\cvitem{}{\textbf{Arabe} (langue maternelle) \quad \textbf{Français} (courant / bilingue) \quad \textbf{Anglais} (courant) \quad \textbf{Allemand} (notions)}
 
 % ============================================================
 %     PROJETS & ENGAGEMENT
 % ============================================================
-
 \section{Projets \& Engagement}
-\vspace{1pt}
-\begin{itemize}
-\item \textbf{Fondation de Clubs (Théâtre \& Lecture)}: Création et animation d'ateliers culturels pour enfants et adolescents, planification d'événements, gestion logistique et coordination.
-\item \textbf{Bénévolat}: Membre actif au sein d'organisations d'entraide (Le Petit Secouriste, Croissant Rouge Tunisien, SCIENTIST KIDS WORLD).
-\item \textbf{Certifications}: Certificat de secourisme (Ministère de la Santé), Microsoft Tools for Startups (ISAMM).
-\end{itemize}
+\cvlistitem{\textbf{Clubs (Théâtre \& Lecture)} : Création et animation d'ateliers culturels, planification d'événements, gestion logistique et coordination.}
+\cvlistitem{\textbf{Bénévolat} : Membre actif au sein d'organisations d'entraide (Le Petit Secouriste, Croissant Rouge Tunisien, SCIENTIST KIDS WORLD).}
+\cvlistitem{\textbf{Certifications} : Certificat de secourisme PSC1 (Ministère de la Santé), Microsoft Tools for Startups (ISAMM).}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
-
 \section{Références}
-\vspace{1pt}
-\begin{itemize}
-\item{Disponible sur demande.}
-\end{itemize}
+\cvitem{}{Disponibles sur demande.}
 
 \end{document}
