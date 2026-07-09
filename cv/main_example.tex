@@ -3,12 +3,15 @@
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
+% Adjust date column width to avoid overlapping long dates (like MM/YYYY--MM/YYYY)
+\setlength{\hintscolumnwidth}{2.9cm}
+
 % Force section headings to render in moderncv blue (color1)
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
 % Recommandé pour la typographie française : \usepackage[french]{babel}
-\usepackage{hyperref}
+\AtBeginDocument{
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -16,6 +19,7 @@
     urlcolor=blue,
     pdftitle={Zeineb HASSAN - CV},
     pdfpagemode=FullScreen,
+}
 }
 \usepackage[scale=0.80]{geometry} % Ajustez à 0.85 si ça dépasse sur deux pages
 

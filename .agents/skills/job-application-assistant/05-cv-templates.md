@@ -25,12 +25,15 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
+% Adjust date column width to avoid overlapping long dates (like MM/YYYY--MM/YYYY)
+\setlength{\hintscolumnwidth}{2.9cm}
+
 % Force section headings to render in moderncv blue (color1)
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
+\AtBeginDocument{
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -38,6 +41,7 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
     urlcolor=blue,
     pdftitle={[YOUR_NAME] - CV},
     pdfpagemode=FullScreen,
+}
 }
 \usepackage[scale=0.77]{geometry}
 \usepackage{import}
@@ -163,6 +167,12 @@ Include `\usepackage{needspace}` in the preamble.
 
 **Problem: one trailing section spills to page 3 (e.g., References alone on page 3)**
 Add `\enlargethispage{2-3\baselineskip}` before a late section (e.g., before `\section{Honors and Awards}`) to stretch page 2 by a few lines. This is the standard LaTeX rescue for near-miss overflows.
+
+**Problem: large empty space at the bottom of Page 1**
+If an entry (like a job or education) is pushed to Page 2 because of a `\needspace` directive or because it doesn't fit, it can leave a large blank space at the bottom of Page 1.
+To fix this:
+- Try removing or lowering the `\needspace` constraint to allow the entry to split naturally across pages (as long as it doesn't leave an orphaned title).
+- Alternatively, use `\newpage` before a logical transition point (like `\section{Formation}`) to cleanly start the next page and balance the contents of both pages.
 
 **Problem: 3 pages with significant content on page 3**
 Cut content — do not compress geometry or `\vspace`. See "Relevance-weighted cutting" below for the rule.
