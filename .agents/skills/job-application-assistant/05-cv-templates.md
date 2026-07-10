@@ -112,6 +112,19 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 **For Assistante RH / Administration du personnel roles:**
 > Forte d'une expérience d'enseignement et de gestion administrative de dossiers, je me réoriente vers le domaine des Ressources Humaines. Mon sens aigu de la confidentialité, mes compétences en communication et ma capacité à coordonner des projets et gérer des relations de travail sont des atouts majeurs pour accompagner vos collaborateurs.
 
+**For Reconversion / Transition internationale (template dédié) :**
+> Après plusieurs années en enseignement et gestion administrative en Tunisie, je poursuis ma reconversion professionnelle en France en valorisant des compétences directement transférables : rigueur administrative, gestion de dossiers complexes, accueil et relation client, et maîtrise du Pack Office. Nouvellement établie dans la métropole lilloise, je recherche une structure stable où mon sens de l'organisation et ma capacité d'adaptation représentent une valeur immédiate.
+
+> [!TIP] **Stratégie reconversion / transition internationale**
+> Ne pas minimiser ni sur-expliquer le contexte. Trois règles :
+> 1. **Nommer le contexte en une phrase** ("reconversion vers l'administration") — jamais plus. L'employeur lit les compétences, pas la biographie.
+> 2. **Enchaîner immédiatement sur les preuves** : quelles compétences concrètes, quel outil, quel résultat. La transition crédibilise la motivation ; les preuves crédibilisent la candidature.
+> 3. **Eviter les formulations défensives** : jamais "malgré mon parcours atypique", "même si je viens de Tunisie", "bien que je n'aie pas d'expérience en France". Préférer le positif direct : "Mes X années en [domaine] m'ont permis de développer [compétence]."
+>
+> **Pour la section Expérience**, lors d'un poste à l'étranger : indiquer le pays en clair dans `\cventry` (ex. `{Tunisie}`) — c'est factuel et attendu. Pas besoin d'expliquer davantage.
+>
+> **Pour la lettre de motivation**, mentionner l'installation dans la métropole lilloise positivement : "Récemment installée à Lille, je suis disponible immédiatement et motivée à m'intégrer durablement dans une équipe locale."
+
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.
 

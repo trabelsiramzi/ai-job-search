@@ -1,7 +1,7 @@
 ---
 name: job-scraper
 description: >
-  Scrapes Danish job sites for new positions matching your profile. Deduplicates across runs.
+  Scrapes French job sites for new positions matching your profile. Deduplicates across runs.
   Triggers on: job scrape, find jobs, search jobs, new jobs, job search, scrape jobs, /scrape
 allowed-tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, Agent, AskUserQuestion
 ---
@@ -12,7 +12,7 @@ allowed-tools: Read, Write, Edit, Glob, Grep, WebFetch, WebSearch, Agent, AskUse
 
 ## How It Works
 
-This skill searches multiple Danish job sites using targeted queries based on your profile, deduplicates against previously seen jobs and the application tracker, and presents new matches with a quick fit assessment.
+This skill searches multiple **French job portals** using targeted queries based on your profile, deduplicates against previously seen jobs and the application tracker, and presents new matches with a quick fit assessment. All searches target the **Lille metropolitan area (≤30 km)**.
 
 ## Invocation
 
@@ -23,7 +23,7 @@ The user triggers this skill by saying things like:
 - "/scrape"
 
 Optional arguments:
-- A focus area, e.g. "/scrape data science" or "/scrape geophysics"
+- A focus area, e.g. "/scrape rh" or "/scrape admin" or "/scrape compta"
 - "broad" to run all search categories, e.g. "/scrape broad"
 
 ---
@@ -38,14 +38,18 @@ Optional arguments:
 
 ### Step 1: Search
 
-Run **WebSearch** queries from `search-queries.md`. By default, run the top 3 priority categories. If the user said "broad", run all categories.
+Run **WebSearch** queries from `search-queries.md`. By default, run **Priorité 1 + Priorité 2**. If the user said "broad", run all 5 priority categories.
 
-If the user specified a focus area (e.g. "data science"), prioritize queries from that category.
+If the user specified a focus area:
+- `/scrape admin` → Priorité 1 uniquement
+- `/scrape rh` → Priorité 2 uniquement
+- `/scrape compta` → Priorité 3 uniquement
+- `/scrape accueil` → Priorité 4 uniquement
 
 For each search:
-- Use `WebSearch` with site-specific queries (jobindex.dk, linkedin.com/jobs, karriere.dk, etc.)
-- Target your configured geographic area
-- Look for postings from the last 14 days
+- Use `WebSearch` with site-specific queries targeting **francetravail.fr**, **indeed.fr**, **hellowork.com**, **linkedin.com/jobs**, **jobijoba.com**
+- Target the **Lille +30 km** geographic area (see Filtre Géographique in search-queries.md)
+- Look for postings from the **last 14 days**
 
 ### Step 2: Fetch & Parse
 
@@ -54,14 +58,15 @@ For each promising result from Step 1:
 - Extract: **job title**, **company**, **location**, **posting date** (or "recent"), **URL**, **key requirements** (brief), **application deadline** (if listed)
 - Skip if the URL or company+title combo already exists in `seen_jobs.json`
 - Skip if the company+role already appears in `job_search_tracker.csv`
+- **Skip if location is outside the Lille +30 km zone** (see Filtre Géographique in search-queries.md)
 
 ### Step 3: Quick Fit Assessment
 
 For each new job, do a rapid fit check (NOT the full evaluation from `04-job-evaluation.md` - just a quick signal):
 
-- **High match**: Role directly involves your core skills
-- **Medium match**: Role is adjacent to your experience
-- **Low match**: Role requires significant skills you lack
+- **High match**: Role directly involves core skills (gestion administrative, saisie, accueil, RH)
+- **Medium match**: Role is adjacent to experience (comptabilité de caisse, relation client)
+- **Low match**: Role requires significant skills currently lacking (SIRH avancé, comptabilité générale)
 
 ### Step 4: Deduplicate & Store
 
@@ -87,23 +92,23 @@ For each new job, do a rapid fit check (NOT the full evaluation from `04-job-eva
 Present new jobs in a table sorted by fit (high first):
 
 ```
-## New Job Matches - YYYY-MM-DD
+## Nouvelles Offres — YYYY-MM-DD
 
-Found X new positions (Y high, Z medium, W low match).
+Trouvé X nouvelles offres (Y haute, Z moyenne, W faible correspondance).
 
-| # | Fit | Title | Company | Location | Deadline | URL |
-|---|-----|-------|---------|----------|----------|-----|
-| 1 | High | ... | ... | ... | ... | [Link](...) |
+| # | Fit | Poste | Entreprise | Localisation | Deadline | Lien |
+|---|-----|-------|------------|--------------|----------|------|
+| 1 | 🟢 Haute | ... | ... | Lille (5 km) | ... | [Voir](...) |
 
-### High-Match Highlights
-For each high-match job, add 2-3 bullet points:
-- Why it matches your profile
-- Key requirements to check
-- Any red flags
+### Points forts des offres haute correspondance
+Pour chaque offre haute correspondance, ajouter 2-3 points :
+- Pourquoi elle correspond au profil
+- Compétences clés à vérifier
+- Points d'attention ou red flags
 ```
 
 After presenting, ask:
-> "Want me to evaluate any of these in detail? Just give me the number(s)."
+> "Tu veux que j'évalue une de ces offres en détail ? Donne-moi le numéro."
 
 If the user picks a number, invoke the **job-application-assistant** skill workflow (fit evaluation first, then CV + cover letter if approved).
 
@@ -117,7 +122,8 @@ If the user decides to apply to any job, add a row to `job_search_tracker.csv`.
 
 1. **Never fabricate job postings.** Only present jobs found via actual WebSearch/WebFetch results.
 2. **Respect deduplication.** Always check seen_jobs.json AND job_search_tracker.csv before presenting.
-3. **Focus on configured geographic area.** Skip jobs that require relocation or are clearly outside commute range.
+3. **Strict geographic filter.** Skip any job outside the Lille +30 km zone — this is a hard deal-breaker. Flag "zone limite" (20-30 km) jobs with a ⚠️ marker.
 4. **Only open positions.** Skip postings with expired deadlines or those marked as closed.
-5. **Be efficient with WebFetch.** Don't fetch every search result - use titles and snippets to pre-filter before fetching.
+5. **Be efficient with WebFetch.** Don't fetch every search result — use titles and snippets to pre-filter before fetching full pages.
 6. **Parallel searches.** Use the Agent tool or parallel WebSearch calls to speed up the search phase.
+7. **French portals only.** Do NOT use Danish portals (jobindex.dk, jobbank.dk, jobdanmark.dk, jobnet.dk, karriere.dk). The target market is France / Lille.
