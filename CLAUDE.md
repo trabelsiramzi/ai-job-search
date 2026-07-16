@@ -129,3 +129,17 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 - [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues. See [issue-tracker.md](file:///workspaces/ai-job-search/docs/agents/issue-tracker.md).
+
+### Triage labels
+
+Default triage labels. See [triage-labels.md](file:///workspaces/ai-job-search/docs/agents/triage-labels.md).
+
+### Domain docs
+
+Single-context. See [domain.md](file:///workspaces/ai-job-search/docs/agents/domain.md).
